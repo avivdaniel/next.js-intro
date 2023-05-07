@@ -26,8 +26,7 @@ export const getStaticProps: GetStaticProps<Props> = (context) => {
         return {
             notFound: true
         }
-    }
-    ;
+    };
 
     return {
         props: {
