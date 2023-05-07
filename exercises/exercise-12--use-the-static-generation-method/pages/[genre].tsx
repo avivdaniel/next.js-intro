@@ -26,12 +26,14 @@ export const getStaticProps: GetStaticProps<Props> = (context) => {
         return {
             notFound: true
         }
-    };
+    }
+    ;
 
     return {
         props: {
             genre
-        }
+        },
+        revalidate: 5 //ISR
     }
 };
 
